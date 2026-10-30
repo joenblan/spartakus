@@ -1,0 +1,41 @@
+{
+  "nodes": [
+    { "id": "N1", "name": "Germaniasäle, Chausseestraße", "x": 4, "y": 0, "weight": 1, "type": "rally" },
+    { "id": "N2", "name": "Siegesallee", "x": 0, "y": 2, "weight": 3, "type": "speaker" },
+    { "id": "N3", "name": "Brandenburg Gate / Reichstag", "x": 2, "y": 2, "weight": 4, "type": "g-stronghold" },
+    { "id": "N4", "name": "Unter den Linden", "x": 4, "y": 2, "weight": 4, "type": "axis" },
+    { "id": "N5", "name": "Friedrichstraße station", "x": 4, "y": 1, "weight": 2, "type": "junction" },
+    { "id": "N6", "name": "Wilhelmstraße / Chancellery", "x": 3, "y": 3, "weight": 5, "type": "seat-of-power" },
+    { "id": "N7", "name": "Wilhelmsplatz", "x": 4, "y": 3, "weight": 2, "type": "square" },
+    { "id": "N8", "name": "Lustgarten / Palace", "x": 6, "y": 2, "weight": 3, "type": "rally" },
+    { "id": "N9", "name": "Alexanderplatz / police presidium", "x": 8, "y": 1, "weight": 4, "type": "rally", "holdable": true },
+    { "id": "N10", "name": "Friedrichshain", "x": 10, "y": 1, "weight": 1, "type": "rally" },
+    { "id": "N11", "name": "Newspaper quarter", "x": 5, "y": 4, "weight": 3, "type": "building", "holdable": true },
+    { "id": "N12", "name": "Vorwärts, Lindenstraße", "x": 5, "y": 5, "weight": 3, "type": "building", "holdable": true },
+    { "id": "N13", "name": "Belle-Alliance-Platz", "x": 4, "y": 6, "weight": 1, "type": "g-entry" },
+    { "id": "N14", "name": "Guard Pioneer barracks", "x": 7, "y": 5, "weight": 2, "type": "barracks", "holdable": true },
+    { "id": "N15", "name": "Treptower Park", "x": 10, "y": 6, "weight": 1, "type": "rally" }
+  ],
+  "edges": [
+    { "id": "E1", "a": "N1", "b": "N5", "blocks": 2, "kind": "street" },
+    { "id": "E2", "a": "N1", "b": "N2", "blocks": 4, "kind": "street" },
+    { "id": "E3", "a": "N5", "b": "N4", "blocks": 1, "kind": "street" },
+    { "id": "E4", "a": "N2", "b": "N3", "blocks": 2, "kind": "boulevard" },
+    { "id": "E5", "a": "N3", "b": "N4", "blocks": 2, "kind": "boulevard" },
+    { "id": "E6", "a": "N4", "b": "N8", "blocks": 2, "kind": "boulevard" },
+    { "id": "E7", "a": "N8", "b": "N9", "blocks": 3, "kind": "street" },
+    { "id": "E8", "a": "N9", "b": "N10", "blocks": 2, "kind": "street" },
+    { "id": "E9", "a": "N3", "b": "N6", "blocks": 2, "kind": "street" },
+    { "id": "E10", "a": "N4", "b": "N6", "blocks": 1, "kind": "street" },
+    { "id": "E11", "a": "N6", "b": "N7", "blocks": 1, "kind": "square" },
+    { "id": "E12", "a": "N7", "b": "N11", "blocks": 2, "kind": "street" },
+    { "id": "E13", "a": "N11", "b": "N12", "blocks": 1, "kind": "street" },
+    { "id": "E14", "a": "N12", "b": "N13", "blocks": 1, "kind": "street" },
+    { "id": "E15", "a": "N13", "b": "N6", "blocks": 2, "kind": "street" },
+    { "id": "E16", "a": "N8", "b": "N11", "blocks": 2, "kind": "bridge" },
+    { "id": "E17", "a": "N11", "b": "N14", "blocks": 2, "kind": "street" },
+    { "id": "E18", "a": "N14", "b": "N9", "blocks": 3, "kind": "bridge" },
+    { "id": "E19", "a": "N14", "b": "N15", "blocks": 4, "kind": "street" },
+    { "id": "E20", "a": "N15", "b": "N10", "blocks": 4, "kind": "street" }
+  ]
+}

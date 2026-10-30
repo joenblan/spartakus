@@ -1,0 +1,56 @@
+{
+  "phaseLength": 240, "duskStart": 196, "clockStart": "12:00", "clockRate": 1.375, "fogReroll": 15,
+  "F0": 35, "C0": 50,
+  "rallyPools": { "N1": 11550, "N9": 4950 }, "poolFogFactor": 0.7,
+  "recruits": { "node": "N2", "size": 2000, "energy": 60, "fear": 10, "joinEnergy": 50 },
+  "phantoms": [
+    { "node": "N3", "label": "Potsdam troops", "reported": 500 },
+    { "node": "N13", "label": "Potsdam troops", "reported": 1000 }
+  ],
+  "stewards": { "start": 4, "regenSec": 45, "cap": 6, "capMin": 2 },
+  "lStart": { "energy": 60, "fear": 17.5 },
+  "lArmed": [
+    { "id": "A1", "men": 50, "mgs": 1, "nerve": 60, "node": "N9" },
+    { "id": "A2", "men": 50, "mgs": 0, "nerve": 55, "node": "N9" }
+  ],
+  "gTroops": [
+    { "id": "T-VW", "node": "N12", "men": 80, "mgs": 6, "posture": "Guard", "doctrine": "Wavering", "nerve": 45 },
+    { "id": "T-CH", "node": "N6", "men": 300, "mgs": 2, "posture": "Guard", "doctrine": "Hardened", "nerve": 62.5 },
+    { "id": "T-RG", "node": "N3", "men": 300, "mgs": 2, "posture": "Barracked", "doctrine": "Hardened", "nerve": 62.5 },
+    { "id": "T-PI", "node": "N14", "men": 150, "mgs": 1, "posture": "Barracked", "doctrine": "Hardened", "nerve": 62.5 }
+  ],
+  "speed": { "base": 0.10, "sizeDiv": 30000, "floor": 0.05 },
+  "capacity": { "boulevard": 20000, "street": 8000, "square": 12000, "bridge": 5000 },
+  "blobCap": 15000,
+  "summon": { "min": 1000, "step": 500, "formSec": 10, "nodeCooldown": 20 },
+  "energy": { "decay": 12, "waitDecay": 6, "arrival": 15, "outrage": 5, "drift30": 0.10, "drift15": 0.25,
+              "fearAbove": 50, "fearDiv": 5, "fearCap": 10, "drift30Below": 30, "drift15Below": 15, "max": 100 },
+  "fear": { "vSame": 35, "v1": 20, "v2": 8, "warning": 15, "adjHardened": 5, "phantom": 5, "recovery": 10,
+            "spreadSame": 0.25, "spreadAdj": 0.10, "spreadCap": 5, "escortMult": 0.5, "panic": 80, "rerouteFear": 50,
+            "spreadEvery": 5, "phantomRange": 1, "adjHardenedRange": 1, "volleyRange": 2, "volleyRecentSec": 10, "max": 100 },
+  "panic": { "duration": 30, "speedMult": 1.5, "lossPer10s": 0.08, "shakenFear": 50, "shakenEnergyCap": 50, "shakenSec": 60, "poolReturn": 0.5 },
+  "nerve": { "drainThreshold": 0.5, "drainK": 0.5, "drainCap": 3, "escortMult": 2, "volleyNearby": 10, "recovery": 1 },
+  "panicFire": { "below": 35, "perPoint": 2, "dusk": 10, "recentVolley": 15, "escort": 10, "cap": 60 },
+  "fire": { "frontMen": 100, "frontMgs": 2, "lethality": 0.6, "injuredPerDead": 3, "returnCover": 0.2,
+            "warnAfter": 10, "volleyAfter": 10, "fastDelay": 5, "warnRepeat": 30, "escortStandAside": 0.8, "surrenderPrisoners": 0.5 },
+  "surge": { "energy": 80, "cancelBelow": 78, "dwell": 20, "roll": 0.25, "rollEvery": 10, "warning": 10, "radius": 2, "autoOccupy": 600 },
+  "hold": { "min": 200, "max": 600, "cooldown": 30, "desertPerMin": 0.05 },
+  "recall": { "cooldown": 30, "energyGate": 60, "oddsPerPoint": 2.5, "poolReturn": 0.8 },
+  "escort": { "rebind": 45, "pressureMult": 1.3, "F": 3 },
+  "wom": { "cooldown": 60, "energy": 15, "fear": -10, "gNerve": -5, "comingFear": 10, "autoRecallSec": 30, "disproval": 0.7, "C": -8 },
+  "speakers": { "len": 60, "fatigue": 45, "siegesallee": 1.25, "eichhornN9": 1.5,
+                "siegesalleeNode": "N2", "eichhornNode": "N9",
+                "roster": {
+                  "Liebknecht": { "gain": 40, "calm": 12 },
+                  "Ledebour": { "gain": 30, "calm": 18 },
+                  "Daeumig": { "gain": 30, "calm": 18 },
+                  "Eichhorn": { "gain": 30, "calm": 18 }
+                } },
+  "F": { "volley": 2, "death": 1, "deathCap": 10, "liebknecht": 3, "occupation": 5, "mistreat": 10, "hardenedAt": 60 },
+  "mistreat": { "every": 10, "fear": 60, "energy": 70, "chance": 0.10, "C": -15 },
+  "control": { "margin": 1.5, "min": 500 },
+  "objectives": { "O5-1": 300, "O5-2": 200, "O5-3": 100, "O5-1People": 8000 },
+  "result": { "win": 55, "loss": 45, "evaporation": 2000 },
+  "presence": { "base": 0.5, "energyDiv": 200, "cordonedShare": 0.5, "gPerMan": 3, "lArmedPerMan": 1 },
+  "dispersal": { "minSize": 150 }
+}

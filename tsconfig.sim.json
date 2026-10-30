@@ -1,0 +1,8 @@
+{
+  "//": "Type-checks the simulation with no DOM library, so it cannot depend on a browser.",
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "lib": ["ES2022"]
+  },
+  "include": ["src/sim", "src/data"]
+}
